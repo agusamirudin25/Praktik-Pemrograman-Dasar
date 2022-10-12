@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menggunakan tag picture</title>
+</head>
+
+<body>
+    <h1>Menampilkan Gambar di HTML</h1>
+    <p>Berikut ini adalah gambar gunung di jawa barat:</p>
+    <picture>
+        <source media="(min-width: 650px)" srcset="image/gede-pangrango.jpg">
+        <source media="(min-width: 450px)" srcset="https://i.ibb.co/ZXVPRjw/gunung-ciremai.jpg">
+        <img src="image/gede-pangrango.jpg">
+    </picture>
+</body>
+
+</html>
