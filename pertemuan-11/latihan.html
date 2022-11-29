@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            background-color: white;
+        }
+        .header{
+            background-color: #eaea;
+            padding: 20px;
+            text-align: center;
+        }
+        .top-nav {
+            overflow: hidden;
+            background-color: #333;
+        }
+        .top-nav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .top-nav a:hover{
+            background-color: #ddd;
+            color: rgb(223, 15, 15)
+        }
+        .center {
+            text-align: center;
+        }
+        .foto {
+            margin-top: 20px;
+        }
+        img{
+            border-radius: 100%;
+            background-color: red;
+            padding: 5px;
+        }
+        #identitas {
+            text-align: justify;
+            margin: auto 20px;
+            text-indent: 50px;
+        }
+        #skill {
+            margin: 20px;
+        }
+        .footer{
+            text-align: center;
+            background-color: #eaea;
+            padding: 10px;
+            font-size: 15px;
+        }
+        thead{
+            background-color: yellow;
+        }
+        tbody > tr:nth-child(odd) {background-color: #f2f2f2;}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Portofolio</h1>
+    </header>
+    <nav class="top-nav">
+        <a href="#">Home</a>
+        <a href="#">Download CV</a>
+        <a href="#">Contact</a>
+        <a href="#skill">About</a>
+    </nav>
+    <main>
+        <div class="center foto">
+            <img src="https://agusamirudin25.github.io/assets/img/agus.png" alt="foto">
+            <h2>Agus Amirudin</h2>
+            <p>(Web Developer)</p>
+        </div>
+        <div id="identitas">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore debitis, nisi saepe provident minima iusto consequuntur eum facere deleniti vero voluptatum cumque aliquid rerum ea quisquam ut quam eaque. Ratione, explicabo quidem. Nesciunt laboriosam sit necessitatibus quaerat reprehenderit, sunt, unde, rerum reiciendis omnis incidunt aspernatur dolor architecto dolorum sed totam perferendis odit deserunt modi fugit nobis. Harum laboriosam id perferendis dicta, fugit minima unde, error velit dolor esse numquam maiores! Eius esse tenetur accusantium quibusdam consequatur id alias, suscipit blanditiis unde maiores ab nulla natus distinctio molestias, delectus aliquam veniam ipsam ea, necessitatibus dignissimos sed quaerat temporibus repellat! Quod, magnam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, numquam!
+        </div>
+        <div id="skill">
+            <table width="100%" border="1px" cellspacing="0" cellpadding="10">
+                <thead>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Pengalaman</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML (Exprert)</td>
+                        <td>Freelance Web</td>
+                    </tr>
+                    <tr>
+                        <td>CSS (Exprert)</td>
+                        <td>PT ABC</td>
+                    </tr>
+                    <tr>
+                        <td>Javascript (Exprert)</td>
+                        <td>PT DEF</td>
+                    </tr>
+                    <tr>
+                        <td>UI/UX (Exprert)</td>
+                        <td>PT S</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>&copy; Copyright Agus Amirudin</p>
+    </footer>
+</body>
+</html>

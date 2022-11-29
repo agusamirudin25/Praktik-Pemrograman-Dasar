@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Content</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            background-color: aquamarine;
+        }
+        .header{
+            background-color: #eaea;
+            padding: 20px;
+            text-align: center;
+        }
+        .top-nav {
+            overflow: hidden;
+            background-color: #333;
+        }
+        .top-nav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .top-nav a:hover{
+            background-color: #ddd;
+            color: rgb(223, 15, 15)
+        }
+        .column{
+            float: left;
+            width: 33.33%;
+            padding: 15px;
+        }
+        .row {
+            height: 65vh;
+        }
+        .row::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .footer {
+            text-align: center;
+            background-color: #ddd;
+            padding: 10px;
+        }
+        article{
+            text-align: justify;
+        }
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>My Website</h1>
+    </div>
+    <div class="top-nav">
+        <a href="#">Home</a>
+        <a href="#">Product</a>
+        <a href="#">Service</a>
+        <a href="#">About</a>
+    </div>
+    <div class="row">
+        <div class="column">
+            <h2>HTML</h2>
+            <p>
+                <article>adalah singkatan dari HyperText Markup Language. HTML ini merupakan suatu sistem yang digunakan dalam internet untuk menentukan struktur konten pada halaman web.</article>
+            </p>
+        </div>
+        <div class="column">
+            <h2>CSS</h2>
+            <p>
+                <article>CSS sendiri adalah singkatan dari Cascading Style Sheet. CSS merupakan tools pelengkap HTML yang digunakan untuk mengubah tampilan suatu situs.</article>
+            </p>
+        </div>
+        <div class="column">
+            <h2>Javascript</h2>
+            <p>
+                <article>(disingkat JS) adalah bahasa pemrograman tingkat tinggi dan dinamis. Javascript populer di internet dan dapat bekerja disebagian besar web browser</article>
+            </p>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; Copyright STMIK Horizon 2022</p>
+    </footer>
+    
+</body>
+</html>
