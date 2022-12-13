@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form name="formPenjumlahan">
+        <h1>Memasukan data lewat keyboard</h1>
+            Bilangan Pertama : <input type="number" size="11" name="bilangan1">
+            Bilangan Kedua : <input type="number" size="11" name="bilangan2">
+        <button type="button" onclick="jumlah()">Jumlahkan</button>
+        <button type="reset">Ulang</button>
+    </form>
+    <script>
+        function jumlah() {
+            let bilangan1 = parseFloat(document.formPenjumlahan.bilangan1.value)
+            if(isNaN(bilangan1)) bilangan1 = 0.0
+            let bilangan2 = parseFloat(document.formPenjumlahan.bilangan2.value)
+            if(isNaN(bilangan2)) bilangan2 = 0.0
+
+            let hasil = bilangan1 + bilangan2
+
+            alert(`Hasil Penjumlahan = ${hasil}`)
+        }
+    </script>
+</body>
+</html>
